@@ -21,3 +21,8 @@ Isso significa que, ao ler e decodificar texto do arquivo, deve se
 certificar de não decodificar um trecho que contenha um caractere 
 pela metade. 
 
+ # testes
+Os testes unitários foram feitos usando a lib pytest. Para rodar
+a suite de testes, instale o pacote do pytest com o comando 
+`pip install pytest` e após isso, na raiz do projeto, rode o comando
+`pytest`
