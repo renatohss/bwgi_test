@@ -1,4 +1,9 @@
-def last_line(file_name: str):
+import io
+
+
+def last_line(file_name: str, buffer_size: int = None):
+    if buffer_size:
+        io.DEFAULT_BUFFER_SIZE = buffer_size
     with open(file_name, "r", encoding="utf-8") as file:
         lines = file.readlines()
         try:
