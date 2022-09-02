@@ -1,5 +1,5 @@
-def last_lines(file_name: str):
-    with open(file_name, "r") as file:
+def last_line(file_name: str):
+    with open(file_name, "r", encoding="utf-8") as file:
         lines = file.readlines()
         try:
             if not lines[-1].endswith("\n"):
@@ -11,5 +11,6 @@ def last_lines(file_name: str):
 
 
 if __name__ == "__main__":
-    for line in last_lines("last_line.txt"):
+    txt_file = "last_line.txt"
+    for line in last_line(file_name=txt_file):
         print(line, end="\n")
